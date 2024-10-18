@@ -29,7 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function loadTransactions() {
     try {
-      const response = await fetch("http://localhost:3000/api/transactions");
+      const response = await fetch(
+        "https://personal-finance-app-backend.onrender.com/api/transactions"
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch transactions");
       }
