@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function addTransactionToList(transaction) {
     const li = document.createElement("li");
     li.classList.add(transaction.type);
-    li.textContent = `${transaction.description}: $${parseFloat(
+    li.textContent = `${transaction.description}: ₹${parseFloat(
       transaction.amount
     ).toFixed(2)}`;
     transactionList.appendChild(li);
